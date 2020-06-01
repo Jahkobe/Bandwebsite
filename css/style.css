@@ -3,7 +3,7 @@
 }
 
 body{
-    background-image: url('https://mocah.org/uploads/posts/5386641-performance-person-black-and-white-dark-guitar-spotlight-fog-machine-punk-rock-rock-music-concert-rock-concert-smoke-public-domain-images.jpg');
+    background-image: url('../imgs/guitarplayer.jpg');
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
     background-size: 100rem, 100rem;
@@ -69,6 +69,11 @@ header{
 .shoppingitemimage{
     height: 14rem;
     width: 12rem;
+}
+
+#parent{
+    display: flex;
+    justify-content: space-between;
 }
 
 .shoppingItem{
