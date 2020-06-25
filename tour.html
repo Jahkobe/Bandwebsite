@@ -11,7 +11,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -19,13 +18,13 @@
     <script src="app.js"></script>
 </head>
 
-
 <body>
+
     <div class="container">
     
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a id="navv" class="navbar-brand" href="#">Home</a>
+            <a id="navv" class="navbar-brand" href="index.html">Home</a>
             <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,25 +42,41 @@
                 <li class="nav-item">
                     <a id="navv" class="nav-link" href="#">Book Us</a>
                 </li>
-                <li class="nav-item">
-                    <a id="navv" class="nav-link" href="cart.html">Cart</a>
-                </li>
               </ul>
             </div>
           </nav>
     </header>
 
+    
 
     <main>
-        <h1 id="bandtitle">Dark Kink</h1>
-            <p class="quoteoftheday">Quote of the day:</p>
-            <p class="quote"></p>
-        <!-- Going to put this here in case I want to display tour dates on the front page -->
-        <!-- <div class="whitebackground">
-            <h1>Tour Dates!!!!</h1>
-        </div> -->
+        <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Location</th>
+                <th scope="col">Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>July 4th</td>
+                <td>Bluebird</td>
+                <td>Doors at 8</td>
+              </tr>
+              <tr>
+                <td>July 6th</td>
+                <td>The Ogden</td>
+                <td>Door at 8:30</td>
+              </tr>
+              <tr>
+                <td>July 10th</td>
+                <td>The Fox Theatre</td>
+                <td>Doors at 7</td>
+              </tr>
+            </tbody>
+          </table>
     </main>
-
 
     <footer>
         <ul class="footerul">
@@ -71,6 +86,8 @@
             <li class="footerli">Soundcloud</li>
         </ul>
     </footer>
+
     </div>
+    
 </body>
 </html>

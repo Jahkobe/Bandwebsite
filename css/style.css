@@ -15,6 +15,11 @@ body{
     margin: 0 auto;
 }
 
+/* //////////////////////// */
+/* This is the css for the navbar */
+/* ///////////////////////// */
+
+
 header{
     display: flex;
     flex-direction: row;
@@ -26,7 +31,11 @@ header{
     flex-direction: row;
 }
 
-.navhome{
+#navv{
+    color: white;
+}
+
+a.nav-link{
     font-family: 'Fjalla One', sans-serif;
     color: white;
     list-style: none;
@@ -39,22 +48,45 @@ header{
     margin-left: 20px;
 }
 
-/* .whitebackground{
-    background-color: white;
-    height: 50rem;
-} */
+#hamburger{
+    color: white;
+    background-color: rgba(255, 255, 255, 50%);
+}
 
-.bandtitle{
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+
+/* ////////////////// */
+/* main */
+/* ///////////////// */
+
+#bandtitle{
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
-    font-size: 20rem;
+    font-size: 18rem;
+    font-weight: 800;
     margin: 10rem 0 0 0;
     color: white;
     -webkit-animation: scale-up-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+.quote{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.quoteoftheday{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* ///////////////////////////
+merch list stuff
+////////////////////////// */
+
 .shoppingTitle{
+    margin-top: 5rem;
     color:white;
 }
 
@@ -67,13 +99,14 @@ header{
 }
 
 .shoppingitemimage{
-    height: 14rem;
-    width: 12rem;
+    height: 12rem;
+    width: 10rem;
 }
 
 #parent{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .shoppingItem{
@@ -84,12 +117,21 @@ header{
     color:black;
     text-align: center;
     list-style: none;
+    margin-bottom: 2rem;
+}
+
+.addToCart{
+    border-radius: 3px;
 }
 
 p{
     color: white;
     text-align: center;
 }
+
+/* //////////////////////
+footer
+////////////////////// */
 
 .footerul{
     margin-top: 10rem;
@@ -102,15 +144,40 @@ p{
     font-family: 'Fjalla One', sans-serif;
     color: white;
 }
+/* 
+//////////////////////
+Tour Dates Page
+///////////////////// */
 
-.quote{
-    font-family: 'Fjalla One', sans-serif;
+table, td, th, tr{
+    border: 1px solid white;
 }
 
-.quoteoftheday{
-    font-family: 'Fjalla One', sans-serif;
+table{
+    margin-top: 3rem;
 }
 
+th{
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 4rem;
+}
+
+td{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 70%);
+    color: black;
+    font-size: 3rem;
+}
+
+.alignment{
+    justify-content: space-around;
+}
+
+.tableflex{
+    display: flex;
+}
 
 
 
@@ -152,5 +219,29 @@ p{
               transform: scale(1);
       -webkit-transform-origin: 50% 100%;
               transform-origin: 50% 100%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    #bandtitle{
+        font-family: 'Fjalla One', sans-serif;
+        text-align: center;
+        font-size: 12rem;
+        margin: 10rem 0 0 0;
+        color: white;
+        -webkit-animation: scale-up-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #bandtitle{
+        font-family: 'Fjalla One', sans-serif;
+        text-align: center;
+        font-size: 10rem;
+        margin: 10rem 0 0 0;
+        color: white;
+        -webkit-animation: scale-up-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
   }
